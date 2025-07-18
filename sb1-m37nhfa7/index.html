@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reocaso - Educational Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>reocaso</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link">Updates</a>
+                <a href="#" class="nav-link">Courses</a>
+                <a href="#" class="nav-link">Resources</a>
+                <a href="#" class="nav-link">Blogs</a>
+            </div>
+            <div class="nav-social">
+                <div class="social-icon">👥</div>
+                <div class="social-icon">📄</div>
+            </div>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Header -->
+            <div class="header-section">
+                <h1 class="main-title">What do you want to Learn?</h1>
+                <p class="subtitle">Create personalized learning experiences with AI-powered assistance.</p>
+            </div>
+
+            <!-- Usage Info -->
+            <div class="usage-info">
+                <span class="usage-text">423K daily learners active.</span>
+                <a href="#contact" class="pro-link" onclick="redirectToContact()">Improve your skills storage →</a>
+            </div>
+
+            <!-- Search Interface -->
+            <div class="search-container">
+                <div class="search-box">
+                    <textarea 
+                        id="learningQuery" 
+                        placeholder="Type what you want to learn and we'll bring it to life"
+                        rows="4"
+                    ></textarea>
+                    <div class="search-footer">
+                        <div class="search-icons">
+                            <span class="icon">🔍</span>
+                            <span class="icon">📚</span>
+                        </div>
+                        <button id="startLearning" class="start-btn">Start Learning</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Topics -->
+            <div class="topics-grid">
+                <button class="topic-btn" data-topic="Learn Management fundamentals">Learn Management fundamentals</button>
+                <button class="topic-btn" data-topic="Master Accounting principles">Master Accounting principles</button>
+                <button class="topic-btn" data-topic="Understand Income Tax regulations">Understand Income Tax regulations</button>
+                <button class="topic-btn" data-topic="Build with JavaScript">Build with JavaScript</button>
+                <button class="topic-btn" data-topic="Design Database Management systems">Design Database Management systems</button>
+                <button class="topic-btn" data-topic="Code with Python">Code with Python</button>
+            </div>
+
+            <!-- AI Assistant Section -->
+            <div class="ai-assistant-section">
+                <div class="ai-card">
+                    <h3>AI Learning Assistant</h3>
+                    <p>Get personalized help with your learning journey. Our AI assistant is powered by advanced language models to provide instant support and guidance.</p>
+                    <button id="tryAI" class="ai-btn">Try AI Assistant</button>
+                </div>
+            </div>
+
+            <!-- AI Chat Interface (Hidden by default) -->
+            <div id="aiChat" class="ai-chat hidden">
+                <div class="chat-header">
+                    <h4>AI Learning Assistant</h4>
+                    <button id="closeChat" class="close-btn">×</button>
+                </div>
+                <div id="chatMessages" class="chat-messages"></div>
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Ask me anything!...">
+                    <button id="sendMessage" class="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Reocaso. Empowering learners with AI-driven education.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
